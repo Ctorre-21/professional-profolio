@@ -1,0 +1,13 @@
+/* color variables for easier to remember names */
+:root {
+    --primary: #233d8c;
+    --secondary: #81848f;
+    --pop: #873636;
+}
+
+/* remove default CSS styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
