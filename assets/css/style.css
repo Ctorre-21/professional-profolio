@@ -1,13 +1,111 @@
-/* color variables for easier to remember names */
 :root {
-    --primary: #233d8c;
-    --secondary: #81848f;
-    --pop: #873636;
+    --primary: #76C99B;
+    --secondary:  #F5FFFA;
+    --pop:  #696969;
 }
 
-/* remove default CSS styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+header div {
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    color: var(--pop);
+    font-size: 40px;
+    font-weight: bold;
+    background-color: var(--secondary);
+    padding: 10px;
+    border: 5px solid var(--pop);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav {
+    margin: 20px;
+}
+
+header nav ul li a {
+    padding: 8px;
+    font-size: 28px;
+    margin: 20px 20px 0 0;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    background: var(--pop);
+    color: var(--primary);
+    border-radius: 15px;
+}
+
+/* hero */
+.hero {
+    background-image: url("../images/onur-kurt-5wYXXsZqyOo-unsplash.jpg");
+    height: 620px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero img {
+    height: 400px;
+}
+
+/* utility class styling start */
+.title {
+    border-right: 5px solid var(--pop);
+    min-height: 100%;
+    text-align: right;
+    padding-right: 40px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.title h2 {
+    font-size: 48px;
+}
+
+/* about me section styling start */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 30px;
+}
+
+.about-me p {
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.6;
+    width: 90%;
 }
